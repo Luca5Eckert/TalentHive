@@ -1,4 +1,226 @@
+:root {
+    --primary-color: #000000;
+    --second-color: #3778FA;
+    --background-color: #FFFFFF;
+    --light-color: #F3F3F3;
+    --muted-black: #65676C;
+    --link-color: #A0DA7A;
+    --font-logo: "Space Grotesk", sans-serif;
+    --font-body: "Space Grotesk", cursive;
+}
+
+@font-face {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+}
+
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    font-family: var(--font-body);
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li {
+    list-style: none;
+}
+
+.button {
+    border-radius: 1.5rem;
+    background: var(--background-color);
+    padding: 0.6rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    color: var(--second-color);
+    font-size: 1.4rem;
+    letter-spacing: -2px;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.header-inner {
+    padding: 0.7rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+#menu-toggle {
+    border: none;
+    background-color: inherit;
+    padding: 1rem 0;
+}
+
+.hero {
+    padding: 4rem 0;
+    width: 90%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 0.92rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 4rem;
+}
+
+.intro-title {
+    padding: 2.5rem 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.info-about {
+    width: 90%;
+}
+
+.info-text {
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-color);
+    padding: 2rem 1rem;
+    border-radius: 1.25rem;
+}
+
+.image-info {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.image-info #info-img-mobile{
+    padding: 2rem 0;
+}
+
+.image-info #info-img-desktop{
+    display: none;
+}
+
+.info-questions {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    gap: 0.7rem;
+    padding: 1rem 0;
+}
+
+.question {
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: var(--background-color);
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+#question-open {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-text p {
+    color: var(--muted-black);
+    font-size: 0.625rem;
+    margin: 0.2rem 0;
+    width: 75%;
+}
+
+.question-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+.help {
+    margin-top: 5rem;
+    background-color: var(--second-color);
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.help-inner { 
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.help-title {
+    color: var(--background-color);
+    font-size: 2.2rem;
+    width: 65%;
+    text-align: center;
+}
+
+.help-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 0;
+}
+
+.help-text {
+    color: var(--background-color);
+    font-size: 0.8rem;
+    width: 70%;
+    text-align: justify;
+    font-weight: 400px;
+}
+.learn {
+    width: 7.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bold;
 }
