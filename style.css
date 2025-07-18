@@ -62,6 +62,10 @@ ul li {
     letter-spacing: -2px;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 .menu-desktop {
     display: none;
 }
@@ -98,13 +102,14 @@ ul li {
 }
 
 .hero-title {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .hero-text {
     font-size: 0.92rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
+    padding-bottom: 3rem;
     text-align: center;
 }
 
@@ -117,7 +122,6 @@ ul li {
 
 .intro-title {
     padding: 2.5rem 1rem;
-    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -126,8 +130,7 @@ ul li {
 }
 
 .info-text {
-    padding: 2rem 3rem;
-    font-size: 1.8rem;
+    padding: 2rem 3.4rem;
     text-align: center;
 }
 
@@ -148,7 +151,7 @@ ul li {
     padding: 2rem 0;
 }
 
-.image-info #info-img-desktop{
+#info-img-desktop{
     display: none;
 }
 
@@ -188,6 +191,9 @@ ul li {
     align-items: baseline;
 }
 
+.question h4{
+    font-size: 0.8rem;
+}
 
 .help {
     margin-top: 5rem;
@@ -204,9 +210,14 @@ ul li {
 
 .help-title {
     color: var(--background-color);
-    font-size: 2.2rem;
     width: 65%;
+}
+
+.help-title h3 {
+    font-size: 2.2rem;
     text-align: center;
+    padding-right: 1.4rem;
+    max-width: 14rem;
 }
 
 .help-content {
@@ -353,4 +364,198 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+
+@media(min-width: 1300px){
+
+    .container {
+        max-width: 1900px;
+    }
+
+    
+    .menu-mobile {
+        display: none;
+    }
+
+    
+    .menu-desktop {
+        display: flex;
+        width: 80rem;
+        justify-content: space-between;
+    }
+
+    .direction-pages ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .header-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1.5rem 0rem;
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 40%;
+        font-size: 2rem;
+    }
+
+    .start {
+        background-color: var(--second-color);
+        color: var(--background-color);
+        padding: 1rem;
+        font-size: 14px;
+        border: 100;
+        width: 155px;
+        height: 60px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background: #3778FA;
+    }
+
+
+    .hero{ 
+        padding-top: 2rem 0;
+    }
+
+    .auth-pages ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+
+    .hero-title {
+        font-size: clamp(3rem, 5vw, 6rem);
+        width: 100%;
+        max-width: 850px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 850px;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: clamp(3rem, 4vw, 5.5rem);
+
+    }
+
+    .intro {
+        margin-top: 5rem;
+    }
+
+    .intro-title{
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    .info-about {
+        margin-top: 5rem;
+    }
+
+    .info-text {
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .image-info {
+        margin-top: 5rem;
+    }
+
+    #info-img-mobile {
+        display: none;
+    }
+
+    #info-img-desktop {
+        display: block;
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    .info-questions {
+        margin: auto 0;
+        padding-right: 2rem;
+    }
+    
+    .question{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .question h4 {
+        font-size: 1.5rem;
+    }
+
+    .question-text{
+        width: 45%;
+        font-size: 1.4rem
+    }
+    
+    .help-inner {
+        flex-direction: row;
+        justify-content: baseline;
+    }
+    
+    .help-content{ 
+        margin: auto 0;
+        max-width: 60rem;
+    }
+
+
+    .help-title {
+        color: var(--background-color);
+    }
+    
+    .help-title h3 {
+        font-size: 5rem;
+        text-align: start;
+        width: 100%;
+        max-width: 35rem;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .footer-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-importance {
+        width: 45%;
+        justify-content: space-between;
+    }
+
+    .info-extra {
+        width: 45%;
+        justify-content: space-between;
+    }
+
+
+    .info-general {
+        gap: 0.5rem;
+        justify-content: start;
+        max-width: 20rem;
+    }
+
+
+    .footer-copyright {
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
 }
